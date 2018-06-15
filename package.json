@@ -37,8 +37,9 @@
         "gulp-rename": "^1.2.2",
         "gulp-sass": "4.0.1"
     },  
-        "scripts": {
+    "scripts": {
         "start": "node app",
+        "build:production": "cross-env NODE_ENV=production webpack",
         "postinstall": "gulp default"
-    }
+}
 }
