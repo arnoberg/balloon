@@ -27,18 +27,20 @@
     },
     "dependencies": {
         "bootstrap": "4.1.1",
-        "jquery": "3.3.1"
-    },
-    "devDependencies": {
+        "jquery": "3.3.1",
         "browser-sync": "2.24.2",
         "gulp": "^3.9.1",
         "gulp-clean-css": "3.9.3",
         "gulp-header": "2.0.5",
         "gulp-rename": "^1.2.2",
         "gulp-sass": "4.0.1"
+    },
+    "devDependencies": {
+
     },  
-    "scripts": {
-        "start": "node gulpfile",
-        "postinstall": "gulp default"
+    "scripts": { 
+        "start": "node app", 
+        "postinstall": "gulp default" 
+    }
 }
-}
+
