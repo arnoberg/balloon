@@ -36,9 +36,5 @@
         "gulp-header": "2.0.5",
         "gulp-rename": "^1.2.2",
         "gulp-sass": "4.0.1"
-    },  
-    "scripts": {
-        "start": "gulp",
-        "postinstall": "gulp default"
-}
+    }
 }
