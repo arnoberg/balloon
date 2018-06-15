@@ -38,8 +38,7 @@
         "gulp-sass": "4.0.1"
     },  
     "scripts": {
-        "start": "node app",
-        "build:production": "cross-env NODE_ENV=production webpack",
+        "start": "gulp",
         "postinstall": "gulp default"
 }
 }
