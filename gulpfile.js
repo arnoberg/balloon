@@ -78,3 +78,14 @@ gulp.task('dev', ['css', 'browserSync'], function() {
   gulp.watch('./scss/*.scss', ['css']);
   gulp.watch('./*.html', browserSync.reload);
 });
+
+//Deploy
+var deploy = require('gulp-gh-pages');
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./balloon/**/*")
+    .pipe(deploy())
+});
