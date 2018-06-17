@@ -79,8 +79,7 @@ gulp.task('dev', ['css', 'browserSync'], function() {
   gulp.watch('./*.html', browserSync.reload);
 });
 
-//Deploy
-var deploy = require('gulp-gh-pages');
+var deploy      = require('gulp-gh-pages');
 
 /**
  * Push build to gh-pages
