@@ -5,6 +5,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
+var port = process.env.PORT || 4000;
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -78,3 +79,5 @@ gulp.task('dev', ['css', 'browserSync'], function() {
   gulp.watch('./scss/*.scss', ['css']);
   gulp.watch('./*.html', browserSync.reload);
 });
+
+
