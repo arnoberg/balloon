@@ -81,7 +81,7 @@ gulp.task('dev', ['css', 'browserSync'], function() {
 });
 
 //build server
-gulp.task('serveprod', function() {
+gulp.task('build', function() {
   connect.server({
     root: [your_project_path],
     port: process.env.PORT || 5000, // localhost:5000
